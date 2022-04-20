@@ -1,0 +1,232 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian, english]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingAdditional}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\large#1 & \small #2 \\
+		
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Дунайцев Александр} \\ \vspace{1pt}
+    Дата рождения: 16.10.1999 \\  Место жительства: Москва \\ \vspace{1pt}
+    \small \href{tel:+79266490006}{ \raisebox{-0.1\height}\faPhone\ \underline{+7 (926)-649-00-06} ~} \href{dunaitsev.alexander@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dunaitsev.alexander@gmail.com}} ~ 
+    %\href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{yourid}}  ~
+    \href{https://github.com/dunaitseva}{\raisebox{-0.2\height}\faGithub\ \underline{dunaitseva}} ~
+    \href{https://t.me/dunaitseva}{\raisebox{-0.2\height}\faTelegram\ \underline{dunaitseva}} ~
+    %\href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    %\href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{ОБРАЗОВАНИЕ}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {МГТУ им. Н. Э. Баумана}{09.2019 -- 06.2023}
+  {Бакалавр "Системы автоматизированного проектирования" - \textbf{CGPA} - \textbf{4.68}}{Москва, Россия}
+  \resumeSubHeadingListEnd
+
+\section{ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ}
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс Подготовительная программа Технопарк МГТУ}{02.2020 -- 06.2020}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс Администрирование Linux Технопарк МГТУ}{02.2020 -- 06.2020}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс Алгоритмы и Структуры данных VK образование}{09.2021 -- 12.2021}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Основная программа Технопарк и VK образование, направление WEB}{02.2022 -- 06.2023}
+\resumeSubHeadingListEnd
+%\vspace{2pt}
+
+%-----------PROJECTS-----------
+\section{ПРОЕКТЫ}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/NIR}{\textbf{\large{\underline{Изображение фигурных чисел}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, SFML, CMake}}}{06.2020}
+    \resumeItemListStart
+    \resumeItem{\normalsize{Разработал программу по отрисовке фигурных чисел в рамках научно-исследовательской работы "Фигурные числа и фигурные закономерности".}}
+
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/NIR} {\underline{\normalsize{https://github.com/dunaitseva/NIR}}}}}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/AES}{\textbf{\large{\underline{Имплементация AES}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, GitHub Actions, GTest, CMake}}}{01.2021}
+    \resumeItemListStart
+    \resumeItem{\normalsize{Разработал архитектуру программного модуля, реализующего AES (в соответствии с FIPS 197 в основе AES лежит алгоритм симметричного шифрования Rijndael). Имлементировал на основе этой архитектуры набор классов на языке C++.}}
+    
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/AES} {\underline{\normalsize{https://github.com/dunaitseva/AES}}}}}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/course_project_infosys_bmstu}{\textbf{\large{\underline{Web-приложение "Госпиталь"}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Flask, HTML, CSS, Bootstrap, MySQL}}}{09.2021}
+    \resumeItemListStart
+    \resumeItem{\normalsize{В рамках курсовой работы реализовал Информационную систему "Госпиталь" с использованием принципа проектирования архитектуры MVC.}}
+    
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/course_project_infosys_bmstu} {\underline{\normalsize{https://github.com/dunaitseva/course\_project\_infosys\_bmstu}}}}}
+    \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    
+    
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{НАВЫКИ}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Языки программирования:}}{ \normalsize{Python, C, C++, Bash, SQL, \LaTeX}} \\
+     \textbf{\normalsize{Технологии/Фреймворки:}}{\normalsize{ STL, Boost, GTest, CMake, Linux, Flask, Git, GitHub Actions, HTML, CSS, Bootstrap}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+ 
+ %-----------ADDITION---------------
+\section{ДОПОЛНИТЕЛЬНО}
+
+$\sbullet[.75] \hspace{0.1cm}$ {{Имею опыт написания тестов}} \hspace{1.6cm} \\
+$\sbullet[.75] \hspace{0.1cm}$ {{Применял Codecov для измерения покрытия кода тестами}} \hspace{2.59cm} \\
+$\sbullet[.75] \hspace{0.2cm}${{Имею опыт применения CI}}\\
+
+$\sbullet[.75] \hspace{0.2cm}${{Использовал инструменты динамического анализа кода (valgrind, санитайзеры)}} \hspace{1cm} \\
+$\sbullet[.75] \hspace{0.1cm}$ {Использовал инструменты статического анализа кода (cpplint, cppcheck, fbinfer, clang-tidy, и т. д.)} \hspace{2.6cm} \\
+$\sbullet[.75] \hspace{0.2cm}${{Английский язык Intermediate, читаю техническию документацию.}} \\
+
+\section{ЗАНЯТОСТЬ}
+
+Готов уделять работе 20-30 часов в неделю.
+
+\end{document}
