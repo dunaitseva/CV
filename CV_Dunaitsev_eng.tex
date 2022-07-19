@@ -100,12 +100,22 @@
     \end{tabular*}\vspace{-7pt}
 }
 
-
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+      \small#1 & \textbf{\small#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\lineSeparatedText}[2]{
+	{\textbf{\large{\underline{#1}}}} $|$ {\large{\underline{#2}}}
+}
+
+\newcommand{\resumeExpItem}[2] {
+	\item 
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+	    #1 & {\small#2}
+    \end{tabular*}\vspace{-5pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -170,19 +180,21 @@
 \resumeSubHeadingListEnd
 %\vspace{2pt}
 
+\section{PROFESSIONAL EXPERIENCE}
+\resumeSubHeadingListStart
+\resumeExpItem {\lineSeparatedText{Sber Robotics Laboratory}{Intern software developer}}{05.2022 - ...}
+\resumeItemListStart
+\resumeItem{\normalsize{Developed firmwares for ESP32 series SoC microcontrollers using the ESP-IDF framework.}}
+\resumeItem{\normalsize{Developed a software architecture and implemented code of firmware for ESP32, which allows convenient use of the microcontroller's Wi-Fi module. Added the ability to send commands to the controller through the serial port in JSON format.}}
+\resumeItem{\normalsize{Researched the problem of WI-FI connection stability in case of high noise in 2.4 GHz band. Proposed solutions to the researched issue from the point of view of software and from the point of view of hardware.}}
+\resumeItem{\normalsize{Implemented a wireless mesh network using ESP32 controllers and tested it, as one of possible solutions for solving problem of the stability of connecting controllers to a Wi-Fi network.}}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+
 %-----------PROJECTS-----------
 \section{PROJECTS}
     \vspace{-5pt}
     \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {\href{https://github.com/dunaitseva/NIR}{\textbf{\large{\underline{Application for rendering polygonal numbers}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, SFML, CMake}}}{06.2020}
-    \resumeItemListStart
-    \resumeItem{\normalsize{Developed application for polygonal numbers rendering as a part of research work "Polygonal numbers and polygonal patterns".}}
-
-    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/NIR} {\underline{\normalsize{https://github.com/dunaitseva/NIR}}}}}
-    \resumeItemListEnd 
-    \vspace{-13pt}
-    
     \resumeProjectHeading
     {\href{https://github.com/dunaitseva/AES}{\textbf{\large{\underline{AES algorithm implementation}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, GitHub Actions, GTest, CMake}}}{01.2021}
     \resumeItemListStart
