@@ -1,0 +1,257 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[russian, english]{babel}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubheadingAdditional}[2]{
+	\vspace{-2pt}\item
+	\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+		\large#1 & \small #2 \\
+		
+	\end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small#2}\\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\lineSeparatedText}[2]{
+	{\textbf{\large{\underline{#1}}}} $|$ {\large{\underline{#2}}}
+}
+
+\newcommand{\resumeExpItem}[2] {
+	\item 
+	\begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+	    #1 & {\small#2}
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Дунайцев Александр} \\ \vspace{1pt}
+    Дата рождения: 16.10.1999 \\  City: Москва \\ \vspace{1pt}
+    \small \href{tel:+79266490006}{ \raisebox{-0.1\height}\faPhone\ \underline{+7 (926)-649-00-06} ~} \href{dunaitsev.alexander@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dunaitsev.alexander@gmail.com}} ~ 
+    %\href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{yourid}}  ~
+    \href{https://github.com/dunaitseva}{\raisebox{-0.2\height}\faGithub\ \underline{dunaitseva}} ~
+    \href{https://t.me/dunaitseva}{\raisebox{-0.2\height}\faTelegram\ \underline{dunaitseva}} ~
+    %\href{https://www.hackerrank.com/yourid}{\raisebox{-0.2\height}\faHackerrank\ \underline{yourid}} ~
+    %\href{https://codeforces.com/profile/yourid}{\raisebox{-0.2\height}\faPoll\ \underline{yourid}}
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{ОБРАЗОВАНИЕ}
+  \resumeSubHeadingListStart
+  \resumeSubheading
+  {МГТУ им. Н. Э. Баумана}{09.2019 -- 06.2023}
+  {Бакалавр "Системы автоматизированного проектирования"}{Moscow, Russia}
+  \resumeSubHeadingListEnd
+
+\section{ДОПОЛНИТЕЛЬНОЕ ОБРАЗОВАНИЕ}
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс "Подготовительная программа C/C++" Технопарк МГТУ}{02.2020 -- 06.2020}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс "Системное адиминистирование Linux" Технопарк МГТУ}{02.2020 -- 06.2020}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс "Алгоритмы и структуры данных" VK Образование}{09.2021 -- 12.2021}
+\resumeSubHeadingListEnd
+
+\resumeSubHeadingListStart
+\resumeSubheadingAdditional
+{Курс "Системный архитекор" VK Образование}{02.2022 -- 06.2023}
+\resumeSubHeadingListEnd
+%\vspace{2pt}
+
+\section{ПРОФЕССИОНАЛЬНЫЙ ОПЫТ}
+\resumeSubHeadingListStart
+\resumeExpItem {\lineSeparatedText{Sber Robotics Laboratory}{Стажер-разработчик ПО}}{05.2022 - ...}
+\resumeItemListStart
+\resumeItem{\normalsize{Разработка прошивок для семейства микроконтроллеров ESP32 с использованием фреймворка ESP-IDF.}}
+\resumeItem{\normalsize{Исследование проблемы нестабильного Wi-Fi соединения в условиях сильной зашумленности окружения и поиск решения.
+}}
+\resumeItem{\normalsize{Реализация и тестирование WMN в качестве возможного решения нестабильного Wi-Fi соединения.}}
+\resumeItem{\normalsize{Рефакторинг кодовой базы шаттловой системы. Разработка более гибкой программной архитектуры, позволившей упростить процесс сопровождения, обновления и доработки кода.}}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{ПРОЕКТЫ}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/AES}{\textbf{\large{\underline{Реализация алгоритма AES}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, GitHub Actions, GTest, CMake}}}{01.2021}
+    \resumeItemListStart
+    \resumeItem{\normalsize{Создал C++ библиотеку, которая предоставляет набор классов для использования алгоритма AES (в соответствии с FIPS 197 AES использует алгоритм симметричного шифрования Rijndael).}}
+    
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/AES} {\underline{\normalsize{https://github.com/dunaitseva/AES}}}}}
+    \resumeItemListEnd 
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/course_project_infosys_bmstu}{\textbf{\large{\underline{Веб-приложение "Hospital"}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Flask, HTML, CSS, Bootstrap, MySQL}}}{09.2021}
+    \resumeItemListStart
+    \resumeItem{\normalsize{В качестве практической задачи на курсовой работе, разработал веб приложение. Создал REST API для приложения, позволяющего заниматья управлением госпиталя. В ходе разработки приложения использовался архитектурный паттерн MVC.}}
+    
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/course_project_infosys_bmstu} {\underline{\normalsize{https://github.com/dunaitseva/course\_project\_infosys\_bmstu}}}}}
+    \resumeItemListEnd 
+    
+    \vspace{-13pt}
+    
+    \resumeProjectHeading
+    {\href{https://github.com/dunaitseva/finite-diff-method}{\textbf{\large{\underline{Решатель уравнения теплопроводности пластины}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, CMake, gnuplot, ANSYS}}}{05.2022}
+    \resumeItemListStart
+    \resumeItem{\normalsize{Создал библиотеку, которая реализует метод конечных разностей для решения нестационарной задачи уравнения теплопроводности для металической пластины произвольной формы и различными типами граничных условий.}}
+    \resumeItem{\normalsize{Разработал набор классов для отрисовки анимации нагрева пластины.}}
+    
+    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/finite-diff-method} {\underline{\normalsize{https://github.com/dunaitseva/finite-diff-method}}}}}
+    \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+    
+    
+\vspace{-12pt}
+
+%-----------PROGRAMMING SKILLS-----------
+\section{НАВЫКИ}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Языки программирования:}}{ \normalsize{C++, C, Python, Bash, SQL, \LaTeX}} \\
+     \textbf{\normalsize{Технологии/Фреймворки:}}{\normalsize{ STL, Boost, GTest, CMake, Linux, Flask, Git, GitHub Actions, HTML, CSS, Bootstrap}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+ 
+ %-----------ADDITION---------------
+\section{ДОПОЛНИТЕЛЬНО}
+
+$\sbullet[.75] \hspace{0.1cm}$ {{Опыт написания модульных и интеграционных тестов.}} \hspace{1.6cm} \\
+$\sbullet[.75] \hspace{0.2cm}${{Опыт использования CI.}} \\
+$\sbullet[.75] \hspace{0.2cm}${{Использование динамических (valgrind, sanitizers) и статических (cpplint, cppcheck, fbinfer, clang-tidy, etc.) инструментов анализа кода.} \hspace{2.6cm} \\
+$\sbullet[.75] \hspace{0.2cm}${{Знание математики: линейная алгебра, методы оптимизации, вычислительная математика. Опыт в исследовании и реализации алгоритмов численных методов.}} \\
+$\sbullet[.75] \hspace{0.2cm}${{Общие инженерные навыки. Опыт использования САПР (Siemens NX, Autodesk Inventor).}} \\
+$\sbullet[.75] \hspace{0.2cm}${{Знание английского: Upper intermediate.}} \\
+	
+	
+
+%\section{EMPLOYMENT PER WEEK}
+
+%Ready to work 20-30 hours per week.
+
+\end{document}
