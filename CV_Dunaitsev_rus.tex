@@ -21,7 +21,7 @@
 
 \RequirePackage{tikz}
 \RequirePackage{xcolor}
-\RequirePackage{fontawesome}
+\RequirePackage{fontawesome5}
 \usepackage{tikz}
 \usetikzlibrary{svg.path}
 
@@ -139,7 +139,7 @@
 
 \begin{center}
     {\Huge \scshape Дунайцев Александр} \\ \vspace{1pt}
-    Дата рождения: 16.10.1999 \\  City: Москва \\ \vspace{1pt}
+    Дата рождения: 16.10.1999 \\  Город: Москва \\ \vspace{1pt}
     \small \href{tel:+79266490006}{ \raisebox{-0.1\height}\faPhone\ \underline{+7 (926)-649-00-06} ~} \href{dunaitsev.alexander@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{dunaitsev.alexander@gmail.com}} ~ 
     %\href{https://linkedin.com/in/yourid}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{yourid}}  ~
     \href{https://github.com/dunaitseva}{\raisebox{-0.2\height}\faGithub\ \underline{dunaitseva}} ~
@@ -182,49 +182,24 @@
 
 \section{ПРОФЕССИОНАЛЬНЫЙ ОПЫТ}
 \resumeSubHeadingListStart
-\resumeExpItem {\lineSeparatedText{Sber Robotics Laboratory}{Стажер-разработчик ПО}}{05.2022 - ...}
+\resumeExpItem {\lineSeparatedText{Sber Robotics Laboratory}{Стажер-разработчик ПО}}{05.2022 - 10.2022}
 \resumeItemListStart
 \resumeItem{\normalsize{Разработка прошивок для семейства микроконтроллеров ESP32 с использованием фреймворка ESP-IDF.}}
-\resumeItem{\normalsize{Исследование проблемы нестабильного Wi-Fi соединения в условиях сильной зашумленности окружения и поиск решения.
-}}
-\resumeItem{\normalsize{Реализация и тестирование WMN в качестве возможного решения нестабильного Wi-Fi соединения.}}
 \resumeItem{\normalsize{Рефакторинг кодовой базы шаттловой системы. Разработка более гибкой программной архитектуры, позволившей упростить процесс сопровождения, обновления и доработки кода.}}
+\resumeItem{\normalsize{Исследовал проблему нестабильного Wi-Fi соединения в условиях сильной зашумленности окружения и нашел решение.
+}}
+\resumeItem{\normalsize{Реализовал, протестировал и внедрил WMN в качестве возможного решения нестабильного Wi-Fi соединения.}}
+
+\resumeItemListEnd 
+\resumeExpItem {\lineSeparatedText{VK Реклама}{Младший программист системной разработки}}{10.2022 - ...}
+\resumeItemListStart
+\resumeItem{\normalsize{Разработка и поддержка сервисов статистики в онлайн контуре рекламной системы.}}
+\resumeItem{\normalsize{Доработал и ввел в эксплуатацию сервис для учета конверсий. Это позволило декомпозировать основной сервис рекламной статистики. Это значительно упростило его поддержку, а также ускорило примерно на 10\%.}}
+\resumeItem{\normalsize{Реализовал учет нескольких новых типов конверсий, в том числе post-view конверсий продвижения сайтов. Эта фича являлась на тот момент 4й самой ожидаемой среди рекламодателей. В итоге система стала успешно сопоставлять 15к rps входных конверсий с предшествующими показами рекламных объявлений и при этом справляться с нагрузкой.}}
+\resumeItem{\normalsize{Реализовал общий механизм откладывания конверсий до прихода предшествующих событий. После этого перестали терять до 20\% конверсий для отдельных продуктов.}}
+\resumeItem{\normalsize{Занимался проектированием дизайна системы обработки статистики.}}
 \resumeItemListEnd 
 \resumeSubHeadingListEnd
-
-%-----------PROJECTS-----------
-\section{ПРОЕКТЫ}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-    \resumeProjectHeading
-    {\href{https://github.com/dunaitseva/AES}{\textbf{\large{\underline{Реализация алгоритма AES}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, GitHub Actions, GTest, CMake}}}{01.2021}
-    \resumeItemListStart
-    \resumeItem{\normalsize{Создал C++ библиотеку, которая предоставляет набор классов для использования алгоритма AES (в соответствии с FIPS 197 AES использует алгоритм симметричного шифрования Rijndael).}}
-    
-    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/AES} {\underline{\normalsize{https://github.com/dunaitseva/AES}}}}}
-    \resumeItemListEnd 
-    \vspace{-13pt}
-    
-    \resumeProjectHeading
-    {\href{https://github.com/dunaitseva/course_project_infosys_bmstu}{\textbf{\large{\underline{Веб-приложение "Hospital"}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{Python, Flask, HTML, CSS, Bootstrap, MySQL}}}{09.2021}
-    \resumeItemListStart
-    \resumeItem{\normalsize{В качестве практической задачи на курсовой работе, разработал веб приложение. Создал REST API для приложения, позволяющего заниматья управлением госпиталя. В ходе разработки приложения использовался архитектурный паттерн MVC.}}
-    
-    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/course_project_infosys_bmstu} {\underline{\normalsize{https://github.com/dunaitseva/course\_project\_infosys\_bmstu}}}}}
-    \resumeItemListEnd 
-    
-    \vspace{-13pt}
-    
-    \resumeProjectHeading
-    {\href{https://github.com/dunaitseva/finite-diff-method}{\textbf{\large{\underline{Решатель уравнения теплопроводности пластины}}} \href{Project Link}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{C++, CMake, gnuplot, ANSYS}}}{05.2022}
-    \resumeItemListStart
-    \resumeItem{\normalsize{Создал библиотеку, которая реализует метод конечных разностей для решения нестационарной задачи уравнения теплопроводности для металической пластины произвольной формы и различными типами граничных условий.}}
-    \resumeItem{\normalsize{Разработал набор классов для отрисовки анимации нагрева пластины.}}
-    
-    \resumeItem{\textcolor{accent} {\href{https://github.com/dunaitseva/finite-diff-method} {\underline{\normalsize{https://github.com/dunaitseva/finite-diff-method}}}}}
-    \resumeItemListEnd 
-    \resumeSubHeadingListEnd
-    
     
 \vspace{-12pt}
 
@@ -232,8 +207,8 @@
 \section{НАВЫКИ}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{\normalsize{Языки программирования:}}{ \normalsize{C++, C, Python, Bash, SQL, \LaTeX}} \\
-     \textbf{\normalsize{Технологии/Фреймворки:}}{\normalsize{ STL, Boost, GTest, CMake, Linux, Flask, Git, GitHub Actions, HTML, CSS, Bootstrap}} \\
+     \textbf{\normalsize{Языки программирования:}}{ \normalsize{Golang, C++, C, Python, Bash, SQL}} \\
+     \textbf{\normalsize{Технологии/Фреймворки:}}{ \normalsize{STL, GTest, CMake, Linux, Git, MySQL, \LaTeX, Tarantella}} \\
     }}
  \end{itemize}
  \vspace{-15pt}
@@ -242,11 +217,13 @@
 \section{ДОПОЛНИТЕЛЬНО}
 
 $\sbullet[.75] \hspace{0.1cm}$ {{Опыт написания модульных и интеграционных тестов.}} \hspace{1.6cm} \\
+$\sbullet[.75] \hspace{0.2cm}${{Опыт работы с системами мониторинга: Grafana, Graphite, Prometheus.}} \\
+$\sbullet[.75] \hspace{0.2cm}${{Опыт профилирования ПО на Golang и C++ с помощью pprof.}} \\
 $\sbullet[.75] \hspace{0.2cm}${{Опыт использования CI.}} \\
 $\sbullet[.75] \hspace{0.2cm}${{Использование динамических (valgrind, sanitizers) и статических (cpplint, cppcheck, fbinfer, clang-tidy, etc.) инструментов анализа кода.} \hspace{2.6cm} \\
 $\sbullet[.75] \hspace{0.2cm}${{Знание математики: линейная алгебра, методы оптимизации, вычислительная математика. Опыт в исследовании и реализации алгоритмов численных методов.}} \\
 $\sbullet[.75] \hspace{0.2cm}${{Общие инженерные навыки. Опыт использования САПР (Siemens NX, Autodesk Inventor).}} \\
-$\sbullet[.75] \hspace{0.2cm}${{Знание английского: Upper intermediate.}} \\
+$\sbullet[.75] \hspace{0.2cm}${{Знание английского: Intermediate.}} \\
 	
 	
 
